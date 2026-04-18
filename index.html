@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOLMBUCS COFFEE | Кофе на все времена • Владимир</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,500&family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- КАСТОМНЫЙ КУРСОР 2.0 -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- ПРЕМИУМ ПРЕЛОАДЕР С КОФЕЙНЫМ ПАРОМ (весенний акцент) -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-preload">
+                <img src="logo.png" alt="KOLMBUCS">
+                <span>KOLMBUCS</span>
+            </div>
+            <div class="coffee-steam">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <p class="slogan-preload">Кофе на все времена • EST. 2026</p>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <!-- HEADER С СТЕКЛЯННЫМ ЭФФЕКТОМ И МОБИЛЬНЫМ МЕНЮ -->
+    <header class="header">
+        <div class="container header-wrap">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Logo">
+                <span>KOLMBUCS</span>
+            </a>
+
+            <!-- ДЕСКТОП НАВИГАЦИЯ -->
+            <nav class="nav-menu">
+                <a href="#about" class="hover-underline">Атмосфера</a>
+                <a href="#menu" class="hover-underline">Меню</a>
+                <a href="#philosophy" class="hover-underline">Философия</a>
+                <a href="#contacts" class="hover-underline">Локация</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#menu" class="btn btn-primary">Заказать сейчас</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- МОБИЛЬНОЕ МЕНЮ -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <a href="#about">Атмосфера</a>
+                <a href="#menu">Меню</a>
+                <a href="#philosophy">Философия</a>
+                <a href="#contacts">Локация</a>
+                <a href="#" class="btn btn-primary mobile-order">Заказать сейчас</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO С ВИДЕО-ФОНОМ (весенний вайб) -->
+    <section class="hero" id="hero">
+        <video class="hero-bg" autoplay loop muted playsinline poster="hero.jpg">
+            <source src="hero-video.mp4" type="video/mp4">
+            <!-- Замени hero-video.mp4 на свой весенний ролик (кофейные зёрна, цветение, пар и т.д.) -->
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <!-- ПЛАВАЮЩИЕ ВЕСЕННИЕ ЭЛЕМЕНТЫ (цветы + зёрна) -->
+        <div class="floating-beans">
+            <i class="fa-solid fa-seedling bean-1"></i>
+            <i class="fa-solid fa-leaf bean-2"></i>
+            <i class="fa-solid fa-mug-hot bean-3"></i>
+            <i class="fa-solid fa-flower bean-4"></i>
+        </div>
+
+        <div class="container hero-content">
+            <p class="subtitle reveal-up">EST. 2026 • ВЛАДИМИР • РАДУЖНЫЙ</p>
+            <h1 class="title reveal-up delay-1">Тот самый кофе.<br>Та самая атмосфера.</h1>
+            <p class="desc reveal-up delay-2">Весенний вкус, который пробуждает. Моменты, которые запоминаются навсегда.</p>
+            
+            <div class="hero-buttons reveal-up delay-3">
+                <a href="#menu" class="btn btn-primary">Посмотреть весеннее меню</a>
+                <a href="#contacts" class="btn btn-outline">Найти нас в Радужном</a>
+            </div>
+
+            <div class="hero-trust">
+                <div class="trust-item"><i class="fa-solid fa-award"></i> Лучший кофе 2026</div>
+                <div class="trust-item"><i class="fa-solid fa-heart"></i> 5 ★ из 5</div>
+                <div class="trust-item"><i class="fa-solid fa-leaf"></i> 100% арабика • свежий урожай</div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Прокрути за весенним вкусом</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- АТМОСФЕРА -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-title reveal-up">
+                <h2>Атмосфера, в которой хочется остаться</h2>
+                <p>Свет, цветение, аромат свежемолотого кофе и весенняя энергия</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card reveal-left">
+                    <div class="about-icon"><i class="fa-solid fa-fire"></i></div>
+                    <h3>Тёплый свет</h3>
+                    <p>Мягкое освещение и живые растения — как в весеннем саду</p>
+                </div>
+                <div class="about-card reveal-up">
+                    <div class="about-icon"><i class="fa-solid fa-music"></i></div>
+                    <h3>Живая музыка</h3>
+                    <p>По пятницам и субботам — акустические сеты с весенними хитами</p>
+                </div>
+                <div class="about-card reveal-right">
+                    <div class="about-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>Свои люди</h3>
+                    <p>Здесь собираются те, кто ценит момент. Ты уже один из нас</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФИЛОСОФИЯ -->
+    <section class="philosophy-section" id="philosophy">
+        <div class="container">
+            <div class="section-title reveal-up">
+                <h2>Кофе — это не напиток.<br>Это философия.</h2>
+            </div>
+            <div class="philosophy-grid">
+                <div class="phil-card reveal-up delay-1">
+                    <span class="phil-number">01</span>
+                    <h3>Качество без компромиссов</h3>
+                    <p>Прямая поставка из Колумбии, Эфиопии и Кении. Обжарка каждые 3 дня. Весенний урожай 2026.</p>
+                </div>
+                <div class="phil-card reveal-up delay-2">
+                    <span class="phil-number">02</span>
+                    <h3>Эмоции в каждой чашке</h3>
+                    <p>Авторские рецепты, созданные с душой. Каждый глоток — маленькое весеннее путешествие.</p>
+                </div>
+                <div class="phil-card reveal-up delay-3">
+                    <span class="phil-number">03</span>
+                    <h3>Сообщество важнее всего</h3>
+                    <p>Мы не просто кофейня. Мы место, где рождаются идеи, дружба и воспоминания.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- МЕНЮ — ВЕСЕННИЙ ХИТ (обновлено + новые позиции) -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-title reveal-up">
+                <h2>Авторское весеннее меню</h2>
+                <p>Каждый напиток и десерт — как маленькое произведение искусства. Новинки 2026!</p>
+            </div>
+            
+            <div class="swiper menu-slider reveal-up delay-1">
+                <div class="swiper-wrapper">
+                    <!-- 1 — ВЕСЕННИЙ ХИТ -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="latte-vesenniy-sad.png" alt="Латте Весенний сад"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Латте «Весенний сад»</h3>
+                                    <span class="price">310 ₽</span>
+                                </div>
+                                <p>Нежный сливочный вкус с нотками цветущей вишни, мяты и свежего зелёного чая. Главный весенний хит 2026!</p>
+                                <div class="card-tags"><span>весенний хит</span><span>новинка</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="morkovniy-tort.png" alt="Морковный торт"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Морковный торт</h3>
+                                    <span class="price">250 ₽</span>
+                                </div>
+                                <p>Нежный творожный крем, грецкий орех, мускат и свежая морковь нового урожая.</p>
+                                <div class="card-tags"><span>веган</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="kashtanoviy-raf.png" alt="Каштановый Раф"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Каштановый Раф</h3>
+                                    <span class="price">370 ₽</span>
+                                </div>
+                                <p>Уютный вкус с каштановым кремом и лёгкой весенней свежестью.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="lavandoviy-kapuchino.png" alt="Лавандовый Капучино"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Лавандовый Капучино</h3>
+                                    <span class="price">340 ₽</span>
+                                </div>
+                                <p>Цветочная нежность лаванды, молочная пенка и яркий весенний эспрессо.</p>
+                                <div class="card-tags"><span>весенний</span><span>хит</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 — НОВИНКА -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="chay-sakura.png" alt="Чай Сакура"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Чай «Сакура»</h3>
+                                    <span class="price">290 ₽</span>
+                                </div>
+                                <p>Нежный розовый чай с лепестками сакуры, лёгкой сладостью и весенним ароматом цветения.</p>
+                                <div class="card-tags"><span>весенний</span><span>новинка</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 — НОВИНКА -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="limonad-myatno-ogurechniy.png" alt="Мятно-огурочный лимонад"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Лимонад «Мятно-огурочный»</h3>
+                                    <span class="price">220 ₽</span>
+                                </div>
+                                <p>Освежающий микс огурца, свежей мяты и лайма. Идеально для тёплой весны в Радужном.</p>
+                                <div class="card-tags"><span>без кофеина</span><span>освежение</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 — НОВИНКА -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="bulochki-s-koricey.png" alt="Булочки с корицей"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Булочки с корицей</h3>
+                                    <span class="price">280 ₽</span>
+                                </div>
+                                <p>Пышные булочки с корицей, орехами и сливочной глазурью. Уютный весенний десерт.</p>
+                                <div class="card-tags"><span>выпечка</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 — НОВИНКА -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="pirozhnye-vesennie.png" alt="Весенние пирожные"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Весенние пирожные</h3>
+                                    <span class="price">350 ₽</span>
+                                </div>
+                                <p>Ассорти: лавандовое, розовое и фисташковое. Украшены съедобными цветами и золотом.</p>
+                                <div class="card-tags"><span>весенний хит</span><span>новинка</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 — НОВИНКА -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="makaruny.png" alt="Макаруны"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Макаруны «Нежность»</h3>
+                                    <span class="price">180 ₽</span>
+                                </div>
+                                <p>Набор из 3 штук: вишня, лаванда, мята. Идеальное весеннее лакомство.</p>
+                                <div class="card-tags"><span>веган</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10 — НОВИНКА -->
+                    <div class="swiper-slide">
+                        <div class="menu-card">
+                            <div class="card-image"><img src="pashalnye-yayca.png" alt="Пасхальные десерты"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Пасхальные мини-десерты</h3>
+                                    <span class="price">320 ₽</span>
+                                </div>
+                                <p>Яркое ассорти с цветами и золотом — лимитированная весенняя коллекция 2026.</p>
+                                <div class="card-tags"><span>ограничено</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОТЗЫВЫ (оставил, но добавил весенний вайб) -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-title reveal-up">
+                <h2>Что говорят наши гости</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal-left">
+                    <p>«Весенний сад в чашке — это просто магия! Теперь это моё любимое место в Радужном.»</p>
+                    <div class="author">
+                        <strong>Анна Морозова</strong>
+                        <span>Писательница • Регулярный гость</span>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal-up">
+                    <p>«Латте «Весенний сад» — взрыв эмоций. Атмосфера как в цветущем саду.»</p>
+                    <div class="author">
+                        <strong>Дмитрий Соколов</strong>
+                        <span>Фотограф • @dima_shots</span>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal-right">
+                    <p>«Привёл сюда девушку на первое свидание. Теперь это наше весеннее место. Спасибо!»</p>
+                    <div class="author">
+                        <strong>Максим &amp; Катя</strong>
+                        <span>Пара с 2026 года</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ — ОБНОВЛЁННЫЕ -->
+    <section class="contacts-section" id="contacts">
+        <div class="container contacts-wrap">
+            <div class="contacts-info reveal-left">
+                <h2>Ждём тебя в гости</h2>
+                <p class="address-text">Уютное кирпичное здание в Радужном. Ищи нашу зелёную вывеску с лицом!</p>
+                <ul class="info-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Владимирская обл., Радужный, 3-й квартал, 32/1</li>
+                    <li><i class="fa-solid fa-clock"></i> Пн–Вс: 08:00 — 22:00</li>
+                    <li><i class="fa-brands fa-telegram"></i> @kolmbucs_coffee</li>
+                    <li><i class="fa-brands fa-instagram"></i> @kolmbucs.coffee</li>
+                </ul>
+                <a href="#" class="btn btn-primary" style="margin-top: 30px;">Забронировать столик</a>
+            </div>
+            <div class="contacts-map reveal-right">
+                <!-- НОВЫЕ КООРДИНАТЫ РАДУЖНОГО -->
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=40.332479%2C56.003522&amp;z=17&amp;l=map&amp;source=constructor&amp;um=constructor%3ACPvNENm4" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="border-radius: 28px; box-shadow: 0 30px 60px rgba(0,0,0,0.3);"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ПРЕМИУМ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="KOLMBUCS">
+                    <span>KOLMBUCS COFFEE</span>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-vk"></i></a>
+                </div>
+            </div>
+            <p class="footer-text">© 2026 KOLMBUCS • Владимир, Радужный. Кофе, который остаётся с тобой навсегда.</p>
+            <p class="footer-sub">Сделано с душой в весеннем 2026 ❤️</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
